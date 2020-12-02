@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/public/index.css">
+    <meta charset="utf-8">
+    <title>
+    </title>
+  </head>
+  <body class="body_index">
+    <h1> Hey, my name is <%= name %>!</h1>
+    <img src=  "https://www.animatedimages.org/data/media/1026/animated-bugs-bunny-image-0031.gif">
+    <h3>Food   <%= get('food')  %></h3>
+    <h3>Health <%= get('health')%></h3>
+    <h3>Happy  <%= get('happy') %></h3>
+    <h3>Cleanliness  <%= get('cleanliness') %></h3>
+    <h3>Energy  <%= get('energy') %></h3>
+    <h3>Intelligence  <%= get('intelligence') %></h3>
+    <p id="food">
+      <img src = "https://findicons.com/files/icons/206/looney_tunes/300/bugs_bunny_carrot.png" style="max-width: 100px;max-height: 100px">
+    </p>
+    <p id="health">
+      <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6e1lnVRIxJPMv00Mk9XX6jfLjP3aZLukrJg&usqp=CAU" style="max-width: 100px; max-height: 100px">
+    </p>
+    <p id= "play">
+      <img src = "https://i.pinimg.com/originals/3c/e4/c2/3ce4c26770046eb9b754d2a7bf832b72.png" style="max-width: 100px; max-height: 100px">
+    </p>
+    <p id="wash">
+      <img src = "https://media3.giphy.com/media/3o6vXHWrVqDf85K3II/giphy.gif" style="max-width: 100px; max-height: 100px">
+    </p>
+    <p id="energy">
+      <img src = "https://media1.giphy.com/media/26CaM7QF9ULFzKuli/source.gif" style="max-width: 100px; max-height: 100px">
+    </p>
+    <div>
+      <form action="/change" method="get">
+        <div class="btns">
+          <button class="button-container" name="food" value="food">Food</button>
+          <button class="button-container" name="health" value="health">Health</button>
+          <button class="button-container" name="happy" value="happy">Play</button>
+          <button class="button-container" name="cleanliness" value="cleanliness">Wash</button>
+          <button class="button-container" name="energy" value="energy">Energy</button>
+        </form>
+        <form action="/study" method="get">
+          <button type="submit" class="button-container" name="study" value="">Study</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  </html>

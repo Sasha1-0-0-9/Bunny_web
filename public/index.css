@@ -1,0 +1,83 @@
+.body_index{
+text-align: center;
+}
+
+.button-container {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+  transition: .3s;
+}
+.button-container:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46,229,157,.4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+.form {
+    font-size: 250%;
+}
+
+#start{
+	position: relative;
+	right: 20pt;
+	bottom: 145pt;
+}
+
+.block{
+	position: relative;
+	right: 145pt;
+	bottom: -125pt;
+}
+
+#label{
+	position: relative;
+	right: 145pt;
+	bottom: -125pt;
+}
+
+.btns{
+	position: relative;
+	bottom: 220pt;
+}
+
+#food{
+	position: relative;
+	bottom: -100pt;
+	right: 270pt;
+}
+#health{
+	position: relative;
+	bottom: -10pt;
+	right: 130pt;
+}
+#play{
+	position: relative;
+	bottom: 80pt;
+	right: 10pt;
+}
+#wash{
+	position: relative;
+	bottom: 150pt;
+	left: 140pt;
+}
+#energy{
+	position: relative;
+	bottom: 220pt;
+	left: 280pt;
+}

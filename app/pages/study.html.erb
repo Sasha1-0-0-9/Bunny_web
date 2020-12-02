@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Study</title>
+    <link rel="stylesheet" type="text/css" href="/public/index.css">
+  </head>
+  <body class="body_index">
+  <h1>It's high time to study</h1>
+
+  <h3>Intelligence: <%= get('intelligence') %></h3>
+  <img src="https://i.gifer.com/fyi5.gif">
+  <div class="row">
+    <form action="/study" method="get" style="">
+      <button class="button-container" name="intelligence"
+      value="intelligence">Read a book</button>
+    </form>
+
+    <form action="/exit" method="get" style="">
+      <button class="button-container">Chill</button>
+    </form>
+    <form action="/start" method="get" style="" ">
+      <button class="button-container">Go Back</button>
+    </form>
+  </div>
+</body>
+</html>
