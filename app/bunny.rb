@@ -9,14 +9,14 @@ class Bunny
   end
 
   def initialize(environment)
-    @rack    = Rack::Request.new(environment)
-    @food   = 100
+    @rack = Rack::Request.new(environment)
+    @food = 100
     @health = 100
-    @happy  = 100
+    @happy = 100
     @cleanliness = 100
     @energy = 100
     @intelligence = 30
-    $NEEDS  = %w[food health happy cleanliness energy  water]
+    $NEEDS = %w[food health happy cleanliness energy  water]
   end
 
   def response
@@ -33,8 +33,6 @@ class Bunny
         response.set_cookie('energy', @energy)
         response.set_cookie('intelligence', @intelligence)
         response.set_cookie('name', @rack.params['name'])
-        response.set_cookie('login', @rack.params['login'])
-        response.set_cookie('password', @rack.params['password'])
         response.redirect('/start')
       end
 
@@ -75,6 +73,10 @@ class Bunny
   def render(template)
     path = File.expand_path("../pages/#{template}", __FILE__)
     ERB.new(File.read(path)).result(binding)
+  end
+
+  def name
+    name = @rack.cookies['name'].delete(' ')
   end
 
   def get(attr)
